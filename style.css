@@ -128,3 +128,32 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 70vh;
+        text-align: center;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section:not(.hero) {
+        padding: 60px 20px;
+    }
+}
