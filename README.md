@@ -15,7 +15,8 @@ ChatGPT was used to help create and improve the webpage.
 ## How AI Helped
 
 AI helped generate the initial HTML structure and provided ideas for the
-page layout, CSS styling, JavaScript interaction and responsive design.
+page layout, CSS styling, JavaScript interaction and responsive design, 
+clarification and debugging.
 
 ## Personal Review
 
@@ -31,3 +32,12 @@ before pushing it to GitHub.
 - JavaScript
 - Git
 - GitHub
+- ChatGpt 
+
+## Bugs
+
+After committing, and adding all files, i was unable to push to GitHub. because, 
+I created Two README.md files (Local README.md file and GitHub repository README.md file). 
+This made git unable to recognize which file was going to be used for documentation,
+But AI was used for clarification and debugging.
+
