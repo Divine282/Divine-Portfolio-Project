@@ -20,6 +20,10 @@ page layout, CSS styling, JavaScript interaction and responsive design.
 I reviewed it, edited it, tested and improved the generated code throughout the
 development process for the project.
 
+## Review
+
+After AI constructed the page structure with HTML, Styling with CSS, and interactivity/responsiveness with JavaScript, I had to run the code and tested it on the webpage if it was responsive before pushing to GitHub.
+
 ## Technologies Used
 
 - HTML
