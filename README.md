@@ -17,12 +17,12 @@ ChatGPT was used to help create and improve the webpage.
 AI helped generate the initial HTML structure and provided ideas for the
 page layout, CSS styling, JavaScript interaction and responsive design.
 
-I reviewed it, edited it, tested and improved the generated code throughout the
-development process for the project.
+## Personal Review
 
-## Review
-
-After AI constructed the page structure with HTML, Styling with CSS, and interactivity/responsiveness with JavaScript, I had to run the code and tested it on the webpage if it was responsive before pushing to GitHub.
+After AI constructed the page structure with HTML, CSS styling, 
+JavaScript interaction and responsive design, I reviewed it, edited it, 
+tested and improved the generated code throughout the development process for the project,
+before pushing it to GitHub.
 
 ## Technologies Used
 
