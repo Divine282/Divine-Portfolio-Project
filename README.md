@@ -1,43 +1,54 @@
-# Divine Omatey Portfolio
+# Divine Omatey — Personal Portfolio
 
-## About the Project
+## Project Overview
 
-This project is a simple personal portfolio webpage created to demonstrate
-my knowledge of HTML, CSS, JavaScript, Git and GitHub.
+This project is a modern personal portfolio website created to showcase
+my software engineering interests, skills, projects and learning journey.
 
-The webpage contains an introduction, about section, skills, projects and
-contact section.
+The portfolio contains:
 
-## AI Tool Used
-
-ChatGPT was used to help create and improve the webpage.
-
-## How AI Helped
-
-AI helped generate the initial HTML structure and provided ideas for the
-page layout, CSS styling, JavaScript interaction and responsive design, 
-clarification and debugging.
-
-## Personal Review
-
-After AI constructed the page structure with HTML, CSS styling, 
-JavaScript interaction and responsive design, I reviewed it, edited it, 
-tested and improved the generated code throughout the development process for the project,
-before pushing it to GitHub.
+- Interactive navigation
+- Responsive design
+- Animated visual elements
+- Dark/light theme switching
+- Animated project filtering
+- Project information modal
+- Animated statistics
+- Animated skill progress bars
+- Scroll reveal animations
+- Interactive contact form
+- Responsive mobile layout
 
 ## Technologies Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 - Git
 - GitHub
-- ChatGpt 
 
-## Bugs
+## AI Tool Used
 
-After committing, and adding all files, i was unable to push to GitHub. because, 
-I created Two README.md files (Local README.md file and GitHub repository README.md file). 
-This made git unable to recognize which file was going to be used for documentation,
-But AI was used for clarification and debugging.
+ChatGPT
 
+## How AI Helped
+
+ChatGPT was used during the development process to generate the initial
+HTML structure, suggest design improvements, create CSS layouts and
+animations, and develop JavaScript functionality.
+
+AI also helped improve the responsiveness, visual organization,
+interactivity and overall structure of the portfolio.
+
+The generated code was reviewed, modified, tested and organized during
+development.
+
+## Project Structure
+
+```text
+divine-portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
