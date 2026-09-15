@@ -257,12 +257,13 @@ button {
 }
 
 .primary-button {
-    color: white;
-    background: var(--text);
+    border: 1px solid var(--border);
+    background: var(--background);
 }
 
 .outline-button {
     border: 1px solid var(--border);
+    background: var(--background);
 }
 
 .primary-button:hover,
@@ -473,17 +474,24 @@ button {
 /* MARQUEE */
 
 .marquee {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
     padding: 25px 0;
     overflow: hidden;
     background: linear-gradient(
-        90deg,
-        #7c3aed,
-        #06b6d4,
-        #10b981,
-        #f97316,
-        #ec4899
-    );
-    color: white;
+    90deg,
+    rgba(124, 58, 237, 0.18),
+    rgba(6, 182, 212, 0.12),
+    rgba(249, 115, 22, 0.15)
+);
+    color: white;    
+    border-radius: 10px;
 }
 
 .marquee-track {
@@ -519,16 +527,26 @@ button {
 }
 
 .about-visual {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    border-radius: 24px;
     height: 560px;
     position: relative;
     overflow: hidden;
     border-radius: 30px;
     background: linear-gradient(
-        135deg,
-        #ddd6fe,
-        #bae6fd,
-        #fce7f3
-    );
+    90deg,
+    rgba(124, 58, 237, 0.18),
+    rgba(6, 182, 212, 0.12),
+    rgba(249, 115, 22, 0.15)
+);
 }
 
 .visual-grid {
@@ -585,7 +603,8 @@ button {
     top: 35px;
     right: 35px;
     padding: 18px;
-    background: white;
+    background: var(--background);
+    color: var(--text);
     border-radius: 15px;
     box-shadow: var(--shadow);
 }
@@ -899,32 +918,43 @@ button {
 .project-purple {
     background: linear-gradient(
         135deg,
-        #7c3aed,
-        #c084fc
+        #6f46b6,
+        #18022e
     );
 }
 
 .project-blue {
     background: linear-gradient(
         135deg,
-        #0284c7,
-        #67e8f9
+        #06033a,
+        #2391a0
     );
 }
 
 .project-orange {
+    background: rgba(8, 6, 110, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    color: rgb(5, 97, 202);
     background: linear-gradient(
         135deg,
-        #ea580c,
-        #fdba74
+        #0369a1,
+        #101014
     );
 }
 
 .project-green {
     background: linear-gradient(
         135deg,
-        #059669,
-        #6ee7b7
+        #24011c,
+        #a1498e
     );
 }
 
@@ -1126,9 +1156,19 @@ button {
 /* STATEMENT */
 
 .statement {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+
+    border: none;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    border-radius: 24px;
     position: relative;
     overflow: hidden;
-    background: #111;
+    background: none;
 }
 
 .statement::before {
@@ -1138,7 +1178,7 @@ button {
 
     background-image: radial-gradient(
         circle,
-        rgba(255, 255, 255, 0.8) 2px,
+        rgba(31, 188, 199, 0.8) 2px,
         transparent 2px
     );
 
@@ -1243,12 +1283,13 @@ button {
 .contact-button {
     display: inline-block;
     padding: 15px 21px;
-    background: white;
-    color: #17171c;
+    background: var(--background);
+    color: var(--text);
     border-radius: 30px;
     margin-top: 30px;
     font-size: 12px;
     font-weight: 700;
+    border: 1px solid #7474d4;
 }
 
 .contact-form {
@@ -1261,10 +1302,31 @@ button {
 
 .contact-form label {
     font-size: 11px;
-    color: #aaa;
+    color: #fff;
 }
 
-.contact-form input,
+.contact-form input{
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 14px;
+    border: 1px solid #38383f;
+    background: #202027;
+    color: var(--text);
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill {
+    -webkit-text-fill-color: var(--text);
+    -webkit-box-shadow: 0 0 0px 1000px #202027 inset;
+    box-shadow: 0 0 0px 1000px #202027 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .contact-form textarea {
     display: block;
     width: 100%;
@@ -1272,7 +1334,7 @@ button {
     padding: 14px;
     border: 1px solid #38383f;
     background: #202027;
-    color: white;
+    color: var(--text);
     border-radius: 10px;
     outline: none;
 }
