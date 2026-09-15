@@ -3,98 +3,885 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Divine Omatey's software engineering portfolio."
+    >
+
     <title>Divine Omatey | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2>Divine's Portfolio.</h2>
+    <!-- Background -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+    <div class="background-shape shape-three"></div>
 
-            <ul>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                D<span>O</span>.
+            </a>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button class="theme-button" id="themeButton">
+                ◐
+            </button>
+
         </nav>
+
     </header>
 
+
     <main>
-        <section id="home" class="hero">
-            <div>
-                <p class="small-text">SOFTWARE ENGINEERING STUDENT</p>
-                <h2>Building ideas<br>through code.</h2>
-                <p>
-                    I am learning software engineering and developing
-                    practical skills in web development and technology.
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Available for creative projects
+                </div>
+
+                <p class="eyebrow">
+                    SOFTWARE ENGINEERING × DIGITAL CREATION
                 </p>
 
-                <a href="#about" class="button">Explore</a>
+                <h1>
+                    I build
+                    <span>digital ideas</span>
+                    into reality.
+                </h1>
+
+                <p class="hero-description">
+                    I'm Divine Omatey, a software engineering student
+                    exploring web development, programming, interactive
+                    experiences and practical technology.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        Explore My Work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="outline-button">
+                        Let's Connect
+                    </a>
+
+                </div>
+
+                <div class="hero-numbers">
+
+                    <div>
+                        <strong class="counter" data-target="12">0</strong>
+                        <span>Projects</span>
+                    </div>
+
+                    <div>
+                        <strong class="counter" data-target="5">0</strong>
+                        <span>Technologies</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Ideas</span>
+                    </div>
+
+                </div>
+
             </div>
+
+
+            <!-- ANIMATED HERO VISUAL -->
+            <div class="hero-art">
+
+                <div class="art-orbit orbit-a"></div>
+                <div class="art-orbit orbit-b"></div>
+
+                <div class="planet planet-main">
+
+                    <div class="planet-inner">
+                        DO
+                    </div>
+
+                </div>
+
+                <div class="planet planet-small small-one">
+                    &lt;/&gt;
+                </div>
+
+                <div class="planet planet-small small-two">
+                    JS
+                </div>
+
+                <div class="planet planet-small small-three">
+                    +
+                </div>
+
+                <div class="floating-code">
+
+                    <div class="code-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <code>
+                        <b>const</b> future = {<br>
+                        &nbsp;&nbsp;create: <i>true</i>,<br>
+                        &nbsp;&nbsp;learn: <i>true</i>,<br>
+                        &nbsp;&nbsp;build: <i>true</i><br>
+                        };
+                    </code>
+
+                </div>
+
+                <div class="visual-label label-one">
+                    <span>01</span>
+                    CODE
+                </div>
+
+                <div class="visual-label label-two">
+                    <span>02</span>
+                    CREATE
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a Software Engineering student with a growing interest in building practical digital solutions and understanding how technology works from the foundation to real-world applications.
 
-                My journey in technology is focused primarily on software engineering and programming, while I also explore cinematography and digital content creation as a creative skill. I enjoy combining technical thinking with creativity to create useful, functional, and visually engaging digital experiences.
+        <!-- MARQUEE -->
+        <section class="marquee">
 
-                I am currently developing my foundation in software engineering through hands-on learning, academic projects, programming exercises, and personal projects. My approach to learning is practical: I don't just want to understand what a technology is; I want to understand how it works, why it is used, and how I can apply it to solve problems.
-            </p>
+            <div class="marquee-track">
+                <span>HTML</span>
+                <b>✦</b>
+                <span>CSS</span>
+                <b>✦</b>
+                <span>JAVASCRIPT</span>
+                <b>✦</b>
+                <span>GIT</span>
+                <b>✦</b>
+                <span>WEB DEVELOPMENT</span>
+                <b>✦</b>
+                <span>SOFTWARE ENGINEERING</span>
+                <b>✦</b>
+                <span>HTML</span>
+                <b>✦</b>
+                <span>CSS</span>
+            </div>
+
         </section>
 
-<section id="skills">
-    <h2>Skills</h2>
 
-        <div class="skills">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Git & GitHub</div>
-        </div>
-</section>
+        <!-- ABOUT -->
+        <section class="section about" id="about">
 
-<section id="projects">
-    <h2>Projects</h2>
+            <div class="section-intro">
 
-    <div class="skills">
-        <div>
-            <h3>Calculator</h3>
-            <p>A basic calculator built with HTML, CSS and JavaScript.</p>
-        </div>
+                <p class="eyebrow">01 — ABOUT</p>
 
-        <div>
-            <h3>Student Profile</h3>
-            <p>A simple Portfolio webpage designed to present student information.</p>
-        </div>
+                <h2>
+                    More than writing code.
+                    <span>It's about building.</span>
+                </h2>
 
-        <div>
-            <h3>HTML/CSS Practice</h3>
-            <p>A simple Login webpage designed to register a business account.</p>
-        </div>
+            </div>
 
-        <div>
-            <h3>JavaScript Practice</h3>
-            <p>Small projects created while learning JavaScript fundamentals.</p>
-        </div>
-    </div>
-    <li><a href="#projects">Projects</a></li>
-</section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Interested in working together or discussing technology?</p>
-            <a href="mailto:example@email.com" class="button">Get In Touch</a>
+            <div class="about-grid">
+
+                <div class="about-visual">
+
+                    <div class="visual-grid"></div>
+
+                    <div class="portrait-orb">
+                        <span>DO</span>
+                    </div>
+
+                    <div class="about-badge">
+                        <strong>SE</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <div class="about-number">
+                        01
+                    </div>
+
+                </div>
+
+
+                <div class="about-copy">
+
+                    <p class="large-copy">
+                        Technology interests me because an idea can move
+                        from a thought to something people can actually use.
+                    </p>
+
+                    <p>
+                        My focus is software engineering and practical
+                        development. I enjoy understanding how systems work,
+                        experimenting with code and turning concepts into
+                        functional digital experiences.
+                    </p>
+
+                    <p>
+                        Every project gives me another opportunity to learn,
+                        test an idea, discover a better approach and improve
+                        my understanding of software development.
+                    </p>
+
+                    <div class="about-highlights">
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Problem solving</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Creative development</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Continuous learning</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- SERVICES -->
+        <section class="section services">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">02 — WHAT I EXPLORE</p>
+
+                <h2>
+                    Turning curiosity
+                    <span>into capability.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card service-purple">
+                    <div class="service-icon">⌘</div>
+                    <span>01</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        Creating responsive interfaces and practical
+                        websites using modern web technologies.
+                    </p>
+                </article>
+
+                <article class="service-card service-blue">
+                    <div class="service-icon">◈</div>
+                    <span>02</span>
+                    <h3>Programming</h3>
+                    <p>
+                        Exploring programming logic, algorithms,
+                        interaction and problem solving.
+                    </p>
+                </article>
+
+                <article class="service-card service-orange">
+                    <div class="service-icon">✦</div>
+                    <span>03</span>
+                    <h3>Digital Products</h3>
+                    <p>
+                        Experimenting with ideas that can become
+                        useful digital products and experiences.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="skills-section" id="skills">
+
+            <div class="section skills-inner">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">03 — SKILLS</p>
+
+                    <h2>
+                        My current
+                        <span>toolbox.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-layout">
+
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <span>HTML</span>
+                                <strong>90%</strong>
+                            </div>
+
+                            <div class="skill-track">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <span>CSS</span>
+                                <strong>85%</strong>
+                            </div>
+
+                            <div class="skill-track">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <span>JavaScript</span>
+                                <strong>75%</strong>
+                            </div>
+
+                            <div class="skill-track">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <span>Git & GitHub</span>
+                                <strong>70%</strong>
+                            </div>
+
+                            <div class="skill-track">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skills-art">
+
+                        <div class="skills-ring ring-one"></div>
+                        <div class="skills-ring ring-two"></div>
+                        <div class="skills-ring ring-three"></div>
+
+                        <div class="skills-center">
+                            <span>BUILD</span>
+                            <strong>∞</strong>
+                            <small>LEARN</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section projects" id="projects">
+
+            <div class="projects-top">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">04 — PROJECTS</p>
+
+                    <h2>
+                        Things I've
+                        <span>built.</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    A growing collection of experiments, learning projects
+                    and practical digital experiences.
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+            <div class="project-filters">
+
+                <button class="filter active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter" data-filter="web">
+                    Web
+                </button>
+
+                <button class="filter" data-filter="javascript">
+                    JavaScript
+                </button>
+
+                <button class="filter" data-filter="practice">
+                    Practice
+                </button>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <article
+                    class="project-card project-large"
+                    data-category="web"
+                    data-title="Personal Portfolio"
+                    data-description="A responsive portfolio website designed to showcase software engineering skills, projects and creative digital interests."
+                >
+
+                    <div class="project-art project-purple">
+
+                        <div class="mini-window">
+                            <div class="mini-dots">● ● ●</div>
+
+                            <div class="mini-lines">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span>01 / WEB</span>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A responsive portfolio built with HTML,
+                            CSS and JavaScript.
+                        </p>
+
+                        <button class="project-details">
+                            View details ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="project-card"
+                    data-category="javascript"
+                    data-title="Interactive Calculator"
+                    data-description="A functional calculator created with JavaScript to practise variables, operators, functions and user interaction."
+                >
+
+                    <div class="project-art project-blue">
+
+                        <div class="calculator-art">
+                            <span>+</span>
+                            <strong>123</strong>
+                            <span>×</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span>02 / JAVASCRIPT</span>
+
+                        <h3>Interactive Calculator</h3>
+
+                        <p>
+                            A functional calculator for practising
+                            JavaScript logic.
+                        </p>
+
+                        <button class="project-details">
+                            View details ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="project-card"
+                    data-category="practice"
+                    data-title="Student Profile"
+                    data-description="A simple profile interface created while learning HTML structure and CSS styling."
+                >
+
+                    <div class="project-art project-orange">
+
+                        <div class="profile-art">
+                            <div></div>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span>03 / PRACTICE</span>
+
+                        <h3>Student Profile</h3>
+
+                        <p>
+                            A clean student profile interface built
+                            during HTML and CSS practice.
+                        </p>
+
+                        <button class="project-details">
+                            View details ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="project-card project-large"
+                    data-category="web"
+                    data-title="Landing Page Concept"
+                    data-description="A modern landing page concept exploring layout, typography, color, responsiveness and visual hierarchy."
+                >
+
+                    <div class="project-art project-green">
+
+                        <div class="landing-art">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span>04 / WEB</span>
+
+                        <h3>Landing Page Concept</h3>
+
+                        <p>
+                            A modern landing page experiment focused
+                            on visual hierarchy and responsive design.
+                        </p>
+
+                        <button class="project-details">
+                            View details ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOURNEY -->
+        <section class="section journey" id="journey">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">05 — JOURNEY</p>
+
+                <h2>
+                    Still learning.
+                    <span>Still building.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        01
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Started Exploring Technology</h3>
+                        <p>
+                            Began developing an interest in programming,
+                            websites and digital technology.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        02
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Software Engineering</h3>
+                        <p>
+                            Began studying software engineering and
+                            developing a stronger understanding of
+                            programming and system design.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        03
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Building Projects</h3>
+                        <p>
+                            Started converting lessons into practical
+                            projects using HTML, CSS, JavaScript and Git.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        NOW
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Going Deeper</h3>
+                        <p>
+                            Continuing to develop stronger programming,
+                            web development and software engineering skills.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIG COLOR SECTION -->
+        <section class="statement">
+
+            <div class="statement-orb"></div>
+
+            <p>THE PROCESS</p>
+
+            <h2>
+                Think.
+                <span>Build.</span>
+                Break.
+                <span>Improve.</span>
+            </h2>
+
+            <div class="statement-line"></div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+
+            <div class="contact-box">
+
+                <div class="contact-decoration decoration-one"></div>
+                <div class="contact-decoration decoration-two"></div>
+
+                <div class="contact-content">
+
+                    <p class="eyebrow">
+                        06 — CONTACT
+                    </p>
+
+                    <h2>
+                        Let's make
+                        <span>something useful.</span>
+                    </h2>
+
+                    <p>
+                        Have a project idea, collaboration opportunity
+                        or simply want to talk about technology?
+                    </p>
+
+                    <a
+                        href="mailto:example@email.com"
+                        class="contact-button"
+                    >
+                        Send a Message ↗
+                    </a>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <label>
+                        Name
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Email
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea
+                            id="message"
+                            placeholder="Tell me about your idea..."
+                            required
+                        ></textarea>
+                    </label>
+
+                    <button type="submit">
+                        Submit Message →
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">
+                ×
+            </button>
+
+            <p class="eyebrow">PROJECT INFORMATION</p>
+
+            <h2 id="modalTitle">
+                Project
+            </h2>
+
+            <p id="modalDescription">
+                Project description.
+            </p>
+
+            <div class="modal-line"></div>
+
+            <span>
+                HTML • CSS • JavaScript
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Divine Omatey</p>
+
+        <div class="footer-inner">
+
+            <div class="footer-logo">
+                DO.
+            </div>
+
+            <p>
+                Designed & built by Divine Omatey.
+            </p>
+
+            <p id="footerYear">
+                © 2026
+            </p>
+
+        </div>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 </html>
